@@ -9,6 +9,7 @@ import java.util.List;
 @Repository
 public interface RegionSelectMapper {
 
-    List<SidoDto> getSidoList() ;
+    List<SidoDto> getSidoList();
+
     List<SigunguDto> getSigunguList(int sidoCode);
 }

@@ -5,7 +5,7 @@
 <mapper namespace="com.companionnuri.nuri.model.mapper.NuriInfoMapper">
 
     <select id="searchByQuery" parameterType="String" resultType="LocationListDto">
-        select locId locationId, locListId categoryId, locName locationName
+        select locId locationId, locListId categoryId, locName locationName, locLat locationLat, locLng locationLng
         from location
         where locName like concat("%", #{query}, "%");
     </select>
@@ -33,7 +33,9 @@
                locName     locationName,
                locAddr     locationAddr,
                locRoadAddr locationRoadAddr,
-               locTel      locationTel
+               locTel      locationTel,
+               locLat      locationLat,
+               locLng      locationLng
         from location
         where locId = #{locationId};
     </select>

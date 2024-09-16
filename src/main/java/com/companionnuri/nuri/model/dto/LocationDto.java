@@ -15,5 +15,7 @@ public class LocationDto {
     private String locationAddr;
     private String locationRoadAddr;
     private String locationTel;
+    private String locationLat;
+    private String locationLng;
 
 }

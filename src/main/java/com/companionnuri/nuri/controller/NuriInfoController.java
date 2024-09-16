@@ -93,6 +93,7 @@ public class NuriInfoController {
         }
     }
 
+    // 이거 서비스로 옮기기
     private Map<String, Object> searchResult(List<LocationListDto> list) {
         List<LocationListDto> cafes = new ArrayList<>();
         List<LocationListDto> foods = new ArrayList<>();

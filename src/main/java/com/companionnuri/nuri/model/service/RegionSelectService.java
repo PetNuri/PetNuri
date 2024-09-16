@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface RegionSelectService {
 
-    List<SidoDto> getSidoList() ;
-    List<SigunguDto> getSigunguList(int sidoCode) ;
+    List<SidoDto> getSidoList();
+
+    List<SigunguDto> getSigunguList(int sidoCode);
 }
